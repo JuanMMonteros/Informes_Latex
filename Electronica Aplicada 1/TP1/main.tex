@@ -1,0 +1,137 @@
+\documentclass[12pt, letterpaper]{article} 
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage[spanish]{babel} %pone en español textos automaticos
+\usepackage{fancyhdr} % Se agrega el paquete fancyhdr
+\usepackage{graphicx} % Se agrega el paquete graphicx
+\usepackage[a4paper, margin=3cm]{geometry} %marjenes y hoja A4
+
+
+%pies de pagina
+\pagestyle{fancy} % Se especifica el estilo de página como fancy
+\fancyhf{} % Se limpian los encabezados y pies de página predefinidos
+\rfoot{Página \thepage\ de \pageref{LastPage}} %texto derecha
+\lfoot{Electronica Aplicada II} %texto izquierda
+%encabezado de pagina
+\chead{UNIVERSIDAD TECNOLÓGICA NACIONAL - FRC} % centro
+\fancyhead[R]{\includegraphics[height=1cm]{UTN_logo.jpg}}
+
+
+\begin{document}
+
+%Caratula
+    \begin{titlepage}
+        \centering %texto centrado
+        {\includegraphics[width=0.2\textwidth]{UTN_logo.jpg}\par}
+        {\bfseries\LARGE Universidad Tecnológica Nacional \par}
+        {\scshape\Large Facultad Regional Córdoba\par}
+        \vspace{1cm}
+        {\scshape\Huge Amplificador Realimentado V-S \par}%titulo
+        \raggedright %texto a la izquierda
+        \vspace{1cm}
+        {\Large Materia: Electronica Aplicada II \par}%Materia
+        \vspace{0.5cm}
+        {\Large Curso: 4R1 \par}
+        \vspace{0.5cm}
+        {\Large Edificio: \par}%edificios
+            \begin{itemize}
+                \item{\Large Ingeniero Soro [Aula 606] \par}
+                \item{\Large Laboratorio de electrónica \par}
+            \end{itemize}
+        \vspace{0.5cm}
+        {\Large Profesores: \par} %profes
+            \begin{itemize}
+                \item{\Large [Teórico] Ing, Carlos Celdran \par}
+                \item{\Large [Teórico] Ing, Carlos Enrique Olmos \par}
+                \item{\Large [Práctico] Ing, Federico Luis José Linares \par}
+            \end{itemize}
+        \vspace{0.5cm}
+        {\Large Autores: \par} %autores
+            \begin{itemize}
+                \item{\Large Pappano Meinardi, Joaquín - Leg.86730\par}
+                \item{\Large Monteros Vigueras, Juan Manuel - Leg.86334\par}
+                \item{\Large Romero Diaz, Agustín - Leg.86821\par}
+            \end{itemize}
+        \vspace{0.5cm}
+        {\Large Fecha: {\today} \par}%pone fecha de hoy
+    \end{titlepage}
+
+%Indice
+\newpage
+\tableofcontents
+\newpage
+
+%cuerpo documento
+\section{Introducción}
+
+Aquí va la introducción del documento.
+
+\section{Cálculos Teóricos}
+Se realizaron los cálculos de $A_v$, $Z_o$, $Z_i$, $A_{vf}$, $Z_{of}$, $Z_{if}$
+\singlespacing
+Estamos frente a un amplificador el cual tiene unas función de transferencia $H(s)=\frac{V_o}{V_i}
+$ por lo tanto el circuito equivalente de este lo podemos ver en la figura \ref{fig:2.1}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Imagenes/Screenshot_57.png}
+    \caption{Circuito equivalente amplificador realimentado V-S}
+    \label{fig:2.1}
+\end{figure}
+\singlespacing
+definiremos los parámetros de este circuito respecto al esquemático dado 
+\singlespacing
+$R_B=R_{b1}//R_{b2} \rightarrow 332K8$\hspace{1cm} $hie1=hie2 \rightarrow$\hspace{1cm} $R_e1 \rightarrow 18K$
+\singlespacing
+$Rf \rightarrow 1K6$ \hspace{1cm} $R_B'=R_{b3}//R_{b4} \rightarrow 19K7$ \hspace{1cm} $R_{c1} \rightarrow18K$ 
+\singlespacing
+$hfe \rightarrow $ \hspace{1cm} $R_{c2} \rightarrow 2K$
+\singlespacing
+Las ecuaciones que podemos obtener del análisis del circuito son
+\singlespacing
+$i_{b1}=V_i\frac{1}{hie_1+[(R_{e1}//R_f)(hfe + 1)]} \rightarrow \frac{i_{b1}}{v_i}=\frac{1}{hie_1+[(R_{e1}//R_f)(hfe + 1)]}$
+\singlespacing
+$ i_{b2}=ib1(-hfe\frac{R_{e1}//R_b'//hie_2}{hie_2}) \rightarrow \frac{i_{b2}}{i_{b1}}=-hfe\frac{R_{e1}//R_b'//hie_2}{hie_2}$ 
+\singlespacing
+$V_o=i_{b2}(-hfe[R_{e2}//(R_f+R_{e2})]) \rightarrow \frac{V_o}{i_{b2}}=-hfe[R_{e2}//(R_f+R_{e2}]$
+\subsection{Calculo Av}
+$A_v=\frac{V_o}{V_i}=\frac{v_o}{i_{b2}}\frac{i_{b2}}{i_{b1}}\frac{i_{b1}}{v_i}$
+\subsection{Calculo Red beta y calculo Avf}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\textwidth]{Imagenes/Screenshot_58.png}
+    \caption{Red Beta  V-S}
+    \label{fig:2.2.1}
+\end{figure}
+\singlespacing
+$v_o=i(R_f+R_{e1})$ \hspace{1cm} $vf=iR_{e1}$
+\singlespacing
+$\beta = \frac{v_f}{v_o}=\frac{R_{e1}}{R_{e1}+R_f}$
+\singlespacing
+$D=|1+A_v\beta|$ \hspace{1cm} $A_{vf}=\frac{A_v}{D}$
+\subsection{Cálculos de Zi,Zo,Zif,Zof}
+Lazo abierto:
+$Z_i=R_b//{hie_1+[(R_{e1}//R_f)(hfe+1)]}$
+\singlespacing
+$Z_o=R_{c2}//(R_{e1}+R_f)$
+\singlespacing
+Lazo cerrado :
+$Z_{if}=Z_iD$
+\singlespacing
+$Z_{of}=\frac{Z_o}{D}$
+
+\section{Simulaciones}
+
+
+\subsection{subtitulo}
+
+parte secundaria
+
+
+
+
+\newpage
+otra hoja
+
+\label{LastPage}
+
+\end{document}
