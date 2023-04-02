@@ -6,8 +6,8 @@ Aqui se hallan gloriosos y majestuosos informes de la carrera
 ## Instrucciones basicas
 ### Para subir
 
-git add [archibo_para_subir]
-git commit -m "texto_del_commit"
+git add [archibo_para_subir] \n
+git commit -m "texto_del_commit" \n
 git push
 
 ### Para actualizar (hacerlo para tener texto actualizado)
