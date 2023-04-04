@@ -19,41 +19,41 @@
 \begin{document}
 
 %Caratula
-    \begin{titlepage}
-        \centering %texto centrado
-        {\includegraphics[width=0.2\textwidth]{imagenes/UTN_logo.jpg}\par}
-        {\bfseries\LARGE Universidad Tecnológica Nacional \par}
-        {\scshape\Large Facultad Regional Córdoba\par}
-        \vspace{0.5cm}
-        {\scshape\Huge Trabajo Práctico de laboratorio Nro. 2  \par}%titulo
-        \raggedright %texto a la izquierda
-        \vspace{0.5cm}
-        {\Large Materia: Medidas Electrónicas 1 \par}%Materia
-        \vspace{0.5cm}
-        {\Large Curso: 4R1 \par}
-        \vspace{0.5cm}
-        {\Large Edificio: \par}%edificios
-            \begin{itemize}
-                \item{\Large Ingeniero Soro [Aula 606] \par}
-                \item{\Large Laboratorio de electrónica \par}
-            \end{itemize}
-        \vspace{0.5cm}
-        {\Large Profesores: \par} %profes
-            \begin{itemize}
-                \item{\Large [Teórico] Ing, Carlos Augusto Centeno \par}
-                \item{\Large [Teórico] Ing, Luis Alberto Guanuco \par}
-                \item{\Large [Práctico] Ing, Martin Alejandro Salamero \par}
-            \end{itemize}
-        \vspace{0.5cm}
-        {\Large Autores: \par} %autores
-            \begin{itemize}
-                \item{\Large Pappano Meinardi, Joaquín - Leg.86730\par}
-                \item{\Large Monteros Vigueras, Juan Manuel - Leg.86334\par}
-                \item{\Large Romero Diaz, Agustín - Leg.86821\par}
-            \end{itemize}
-        \vspace{0.5cm}
-        {\Large Fecha: {\today} \par}%pone fecha de hoy
-    \end{titlepage}
+\begin{titlepage}
+	\centering %texto centrado
+	{\includegraphics[width=0.2\textwidth]{imagenes/UTN_logo.jpg}\par}
+	{\bfseries\LARGE Universidad Tecnológica Nacional \par}
+	{\scshape\Large Facultad Regional Córdoba\par}
+	\vspace{0.5cm}
+	{\scshape\Huge Trabajo Práctico de laboratorio Nro. 2  \par}%titulo
+	\raggedright %texto a la izquierda
+	\vspace{0.5cm}
+	{\Large Materia: Medidas Electrónicas 1 \par}%Materia
+	\vspace{0.5cm}
+	{\Large Curso: 4R1 \par}
+	\vspace{0.5cm}
+	{\Large Edificio: \par}%edificios
+	\begin{itemize}
+		\item{\Large Ingeniero Soro [Aula 606] \par}
+		\item{\Large Laboratorio de electrónica \par}
+	\end{itemize}
+	\vspace{0.5cm}
+	{\Large Profesores: \par} %profes
+	\begin{itemize}
+		\item{\Large [Teórico] Ing, Carlos Augusto Centeno \par}
+		\item{\Large [Teórico] Ing, Luis Alberto Guanuco \par}
+		\item{\Large [Práctico] Ing, Martin Alejandro Salamero \par}
+	\end{itemize}
+	\vspace{0.5cm}
+	{\Large Autores: \par} %autores
+	\begin{itemize}
+		\item{\Large Pappano Meinardi, Joaquín - Leg.86730\par}
+		\item{\Large Monteros Vigueras, Juan Manuel - Leg.86334\par}
+		\item{\Large Romero Diaz, Agustín - Leg.86821\par}
+	\end{itemize}
+	\vspace{0.5cm}
+	{\Large Fecha: {\today} \par}%pone fecha de hoy
+\end{titlepage}
 
 %Indice
 \newpage
@@ -67,25 +67,67 @@ Aquí va la introducción del documento.
 
 \subsection{Objetivo}
 Determinar el valor de la resistencia en situaciones específicas. Dar el resultado de la
-medición acompañado del grado de incertidumbre. 
+medición acompañado del grado de incertidumbre.
 
 \subsection{Materiales e Instrumental}
 \begin{itemize}
-    \item Multimetro digital con su correspondiente manual de especificaciones.
-    \item Circuito generador de corriente constante.
-    \item Probeta a ensayar (Tramo de cable o alambre de longitud conocida).
-    \item Telurimetro UNI-T Modelo UT522 (Con su juego de cables, electrodos y accesorios)
+	\item Multimetro digital UNI-T UT39C+.
+	\item Circuito generador de corriente constante.
+	\item Probeta a ensayar (Tramo de cable o alambre de longitud conocida).
+	\item Telurimetro UNI-T Modelo UT522 (Con su juego de cables, electrodos y accesorios)
 \end{itemize}
 
-\subsubsection{prueba}
 
-\section{Desarrollo primer parte}
+\section{Primer parte - Medición de la resistencia de un cable conductor}
 
-Aquí se describe el desarrollo de el estudio.
+\begin{figure}[h]
+	\centering
+	\includegraphics{Imagenes/met_4_terminales.jpg}
+	\caption{Metodo cuatro terminales}
+\end{figure}
 
-\section{Desarrollo segunda parte}
+Para efectuar la medición de resistencias de pequeño valor se requiere, por lo general, el
+empleo de métodos y/o instrumentos especiales. Estas mediciones no se pueden hacer
+mediante el óhmetro de un multímetro común porque la resistencia de contacto que hay entre
+las puntas de prueba del instrumento y los terminales del elemento que se mide se suma al
+resultado agregándose así un error que puede llegar a ser muy importante.
+\\
+Se puede efectuar una medición más exacta de resistencias de pequeño valor, utilizando el método de 4 terminales. 
+Este método se vale de una fuente que proporciona una corriente constante de prueba, la cual se aplica al elemento cuya resistencia
+se desea medir por medio de dos terminales, luego se determina la caída de tensión provocada
+mediante un voltímetro que se conecta con otros dos terminales separados de los primeros.
+Las resistencias de contacto no se eliminan, pero al separarse los "contactos de corriente" y
+los "contactos de potencial", el error puede ser anulado.
+\\
+En esta parte del trabajo práctico se determinará la resistencia total de un
+trozo de cable/alambre conductor, mediante el empleo del método descrito. 
+\\
 
-parte secundaria
+
+
+
+\subsection{Prosedimiento}
+
+\begin{enumerate}
+	\item Se coloca el generador de corriente constante fijo a un valor de 100mA.Para esto se emplea un circuito con un regulador monolítico
+	LM317, este se coloca a una tencion de entrada de 12v para asegurar su funcionamiento.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics{Imagenes/circuito_lm317.jpg}
+		\caption{Circuito generador de corriente constante}
+	\end{figure}
+
+	\item Se colocan los extremos de la Probeta (tramo de conductor) conectados a la fuente de corriente. la misma esta en un 
+	arrollamiento no inductivo, el cual se consigue plegando el cable por la mitad y luego arrollando el conjunto.
+
+\end{enumerate}
+
+\subsection{Cálculo de la incertidumbre en la medición}
+
+\section{Segunda parte - Medición de la resistencia de un sistema de puesta a tierra (Jabalina)}
+
+\section{Conclusiones}
 
 
 \label{LastPage}
