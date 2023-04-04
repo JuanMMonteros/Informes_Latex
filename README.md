@@ -19,7 +19,7 @@ Aqui se hallan gloriosos y majestuosos informes de la carrera
 * git clone https://github.com/JuanMMonteros/Informes_Latex
 
 
-##Nota:
+## Nota:
 no queres que una carpeta u archivo que no tiene nada que ver te joda, entonces metela al .gitignote con **/[nombre_carpeta_u_archivo]
 
 
