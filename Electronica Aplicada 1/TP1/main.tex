@@ -121,10 +121,57 @@ Lazo cerrado :
 $Z_{if}=Z_iD$
 \singlespacing
 $Z_{of}=\frac{Z_o}{D}$
-
 \section{Simulaciones}
 
-
-
+\section{Procedimiento}
+\subsection{Consignas Solitadas}
+\begin{itemize}
+	\item  Implementar un amplificador realimentado
+    \item  Realizar las mediciones $A_v, Z_o,Z_i, A_{vf},Z_{of},Z_{if} $
+    \item  Realizar la medición de Desensibilidad provocando una variación máxima de Av del 45%, para lo
+	cual se deberá modificar algún componente del amplificador (usaremos Re3).
+    \item Obtener y graficar la curva de respuesta en frecuencia de la ganancia circuito a lazo abierto y lazo
+	cerrado del circuito implementado. Para esto se utilizará los generadores provistos por el
+	laboratorio centra
+    \item Haciendo uso del simulador verificar los valores obtenidos del punto anterior (ganancia y
+	respuesta en frecuencia).
+\end{itemize}
+Para poder realizar las mediciones solicitadas , se realizo el pcb del circuito correspondiente y se monto los componentes en el mismo.
+Una vez hecho esto se alimeto el circuito con 22V C.C, en paralelo con $R_L$ se conecto un osiloscopio digital para poder medir la salida y en la entrada un generador de ondas $V_{in}= 60 V_{pp}$ como en el esquema de figura /ref{fig:4.1}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Imagenes/conexion.png}
+	\caption{Conexiones amplificador realimentado V-S}
+	\label{fig:4.1}
+\end{figure}
+\subsection{Mediciones}
+Se comenzo midiendo la salida a lazo abierto $V_o=4V_{pp}$, se procedio a conectar la realimentacion a la salida y se obtuvo la $V_o=700mV$ a lazo cerrado
+\\
+$A_{v1}=\frac{V_o}{V_{i}}=\frac{4V}{0.06V}=66.66\therefore A_{vf1}=\frac{V_o}{V_{i}}=\frac{700mV}{60mV}=11.66$
+\\
+Para reducir la ganacia a lazo abierto un 45 \% se remplazo $R_{e3}$ por un tripo de $1K\Omega$ y se lo vario hasta que la $V_o=2,2V$ en lazo abierto esto se logro con el tripo en $500\omega$, se conecto la realimentacio en se midio $V_o=550mv$
+\\
+Con estos datos se volvio a calcular $A_{v2}=\frac{V_o}{V_{i}}=\frac{2,2V}{0.06V}=36.66\therefore A_{vf2}=\frac{V_o}{V_{i}}=\frac{550mV}{60mV}=9.66$
+\\
+$D=\frac{\Delta \% A_v}{\Delta \% A_{vf}}=\frac{45\%}{21,44\%}=2,09$
+\\
+Una vez calculada la desensibilidad se conecto en la entrada un tripo de $100k\Omega$ con se muestra en la figura\ref{fig:4.2}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Imagenes/zi.png}
+	\caption{Circuito para medicion Zi}
+	\label{fig:4.2}
+\end{figure}
+con el amplificador a lazo abierto se aumento la $V_i$ hasta llegar al punto MES(Maxima excurcion simetrica) $V_o=4,8V$, se conecto el tripo y se lo vario hasta llegar a una $V_o=2,4V$, se saco el tripo y se lo medio
+\\
+$Z_i=40,26k\Omega$
+\\
+Para $Z_o$ se realizo la conexion de la figuta\ref{fig:4.3}
+begin{figure}[h]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Imagenes/zo.png}
+	\caption{Circuito para medicion Zo}
+	\label{fig:4.3}
+\end{figure}
 \label{LastPage}
 \end{document}
