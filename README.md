@@ -10,8 +10,7 @@ Aqui se hallan gloriosos y majestuosos informes de la carrera
 * git commit -m "texto_del_commit" 
 * git push
 
-### Para actualizar (hacerlo para tener texto actualizado)
-
+### Para actualizar (hacerlo para tener texto actualizadoT)
 * git pull
 
 ### Para clonar repo
