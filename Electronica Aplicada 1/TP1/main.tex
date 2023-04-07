@@ -76,28 +76,53 @@ Estamos frente a un amplificador el cual tiene unas función de transferencia $H
 $ por lo tanto el circuito equivalente de este lo podemos ver en la figura \ref{fig:2.1}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.75\textwidth]{Imagenes/Screenshot_57.png}
+	\includegraphics[width=0.75\textwidth]{Imagenes/circeq.png}
 	\caption{Circuito equivalente amplificador realimentado V-S}
 	\label{fig:2.1}
 \end{figure}
 \singlespacing
 definiremos los parámetros de este circuito respecto al esquemático dado
 \singlespacing
-$R_B=R_{b1}//R_{b2} \rightarrow 332K8$\hspace{1cm} $hie1=hie2 \rightarrow$\hspace{1cm} $R_e1 \rightarrow 18K$
+$R_B=R_{b1}//R_{b2} \rightarrow 332K8\Omega$\hspace{1cm} 
 \singlespacing
-$Rf \rightarrow 1K6$ \hspace{1cm} $R_B'=R_{b3}//R_{b4} \rightarrow 19K7$ \hspace{1cm} $R_{c1} \rightarrow18K$
+$R_{e3} \rightarrow 240\Omega$\hspace{1cm} $R_{L} \rightarrow 470\Omega$ \hspace{1cm} $R_{f} \rightarrow 1k6\Omega$
 \singlespacing
-$hfe \rightarrow $ \hspace{1cm} $R_{c2} \rightarrow 2K$
+$Rf \rightarrow 1K6\Omega$ \hspace{1cm} $R_B'=R_{b3}//R_{b4} \rightarrow 19K7\Omega$ \hspace{1cm} $R_{c1} \rightarrow18K\Omega$
 \singlespacing
+$hfe1 \rightarrow 359$ \hspace{1cm} $hfe2 \rightarrow 339$ $R_{c2} \hspace{1cm} \rightarrow 2K\Omega$
+\singlespacing
+Para $hie$ se deben encontrar las corriente ICQ1 e ICQ2 Para eso analizarimos la polarizacion de los traacitores
+\\
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Imagenes/polarizacionQ1.png}
+	\caption{Polarizacion Q1}
+	\label{fig:2.4}
+\end{figure}
+$Vcc-VR_{b1}-VR_{b2}=0 \rightarrow ICQ1=hfe1\frac{Vcc}{R_{b1}+R_{b2}}=5,73mA$
+\\
+$hie1=hfe1\frac{25mV}{ICQ1}=1568\Omega$
+\\
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Imagenes/PolarizaQ2.png}
+	\caption{Polarizacion Q2}
+	\label{fig:2.5}
+\end{figure}
+$Vcc-VR_{b3}-VR_{b4}=0 \rightarrow ICQ2=hfe2\frac{Vcc}{R_{b3}+R_{b4}}=55,65mA$
+\\
+$hie2=hfe2\frac{25mV}{ICQ2}=152\Omega$
+\\
+
 Las ecuaciones que podemos obtener del análisis del circuito son
 \singlespacing
-$i_{b1}=V_i\frac{1}{hie_1+[(R_{e1}//R_f)(hfe + 1)]} \rightarrow \frac{i_{b1}}{v_i}=\frac{1}{hie_1+[(R_{e1}//R_f)(hfe + 1)]}$
+$i_{b1}=V_i\frac{1}{hie_1+[(R_{e1}//R_f)(hfe + 1)]} \rightarrow \frac{i_{b1}}{v_i}=\frac{1}{hie_1+[(R_{e1}//R_f)(hfe + 1)]}=22,36*10^{-6}$
 \singlespacing
-$ i_{b2}=ib1(-hfe\frac{R_{e1}//R_b'//hie_2}{hie_2}) \rightarrow \frac{i_{b2}}{i_{b1}}=-hfe\frac{R_{e1}//R_b'//hie_2}{hie_2}$
+$ i_{b2}=ib1(-hfe\frac{R_{e1}//R_b'//(hie_2+R_{e3}(hfe_2+1))}{(hie_2+R_{e3}(hfe_2+1))}{hie_2})}) \rightarrow \frac{i_{b2}}{i_{b1}}=-hfe\frac{R_{e1}//R_b'//(hie_2+R_{e3}(hfe_2+1))}{(hie_2+R_{e3}(hfe_2+1))}{hie_2})}=35$
 \singlespacing
-$V_o=i_{b2}(-hfe[R_{e2}//(R_f+R_{e2})]) \rightarrow \frac{V_o}{i_{b2}}=-hfe[R_{e2}//(R_f+R_{e2}]$
+$V_o=i_{b2}(-hfe[R_{e2}//(R_f+R_{e2})]) \rightarrow \frac{V_o}{i_{b2}}=-hfe[R_{e2}//(R_f+R_{e2}]=105749$
 \subsection{Calculo Av}
-$A_v=\frac{V_o}{V_i}=\frac{v_o}{i_{b2}}\frac{i_{b2}}{i_{b1}}\frac{i_{b1}}{v_i}$
+$A_v=\frac{V_o}{V_i}=\frac{v_o}{i_{b2}}\frac{i_{b2}}{i_{b1}}\frac{i_{b1}}{v_i}=82,87$
 \subsection{Calculo Red beta y calculo Avf}
 \begin{figure}[h]
 	\centering
@@ -108,19 +133,19 @@ $A_v=\frac{V_o}{V_i}=\frac{v_o}{i_{b2}}\frac{i_{b2}}{i_{b1}}\frac{i_{b1}}{v_i}$
 \singlespacing
 $v_o=i(R_f+R_{e1})$ \hspace{1cm} $vf=iR_{e1}$
 \singlespacing
-$\beta = \frac{v_f}{v_o}=\frac{R_{e1}}{R_{e1}+R_f}$
+$\beta = \frac{v_f}{v_o}=\frac{R_{e1}}{R_{e1}+R_f}=0,075$
 \singlespacing
-$D=|1+A_v\beta|$ \hspace{1cm} $A_{vf}=\frac{A_v}{D}$
+$D=|1+A_v\beta|=7,1618$ \hspace{1cm} $A_{vf}=\frac{A_v}{D}=11,57$
 \subsection{Cálculos de Zi,Zo,Zif,Zof}
 Lazo abierto:
-$Z_i=R_b//{hie_1+[(R_{e1}//R_f)(hfe+1)]}$
+$Z_i=R_b//{hie_1+[(R_{e1}//R_f)(hfe+1)]}=39523\Omega$
 \singlespacing
-$Z_o=R_{c2}//(R_{e1}+R_f)$
+$Z_o=R_{c2}//(R_{e1}+R_f)=927,61\Omega$
 \singlespacing
 Lazo cerrado :
-$Z_{if}=Z_iD$
+$Z_{if}=Z_i*D=283K\Omega$
 \singlespacing
-$Z_{of}=\frac{Z_o}{D}$
+$Z_{of}=\frac{Z_o}{D}=130\Omega$
 \section{Simulaciones}
 
 \section{Procedimiento}
