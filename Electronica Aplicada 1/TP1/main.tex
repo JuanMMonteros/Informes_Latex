@@ -145,6 +145,46 @@ $Z_{if}=Z_i*D=283K\Omega$
 \singlespacing
 $Z_{of}=\frac{Z_o}{D}=130\Omega$
 \section{Simulaciones}
+Para la simulacion se utilizo el sofware Ltspace en el mismo se modelo el amplificador realimentado, se selecciono un valor de $Vin=60mV_{pp}$ y una $f=1,5KHz$
+\subsection{Lazo Abierto}
+y se pudo obserla la $Vout=4,8V_{pp}$ de la fig\ref*{label}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Imagenes/Av.png}
+	\caption{Vout Lazo Abierto}
+	\label{fig:4}
+\end{figure}
+Se calculo la ganancia a lazo abierto $H(s)=\frac{V_o}{V_i} = 80$
+\singlespacing
+Se hizo un varrido en frecuencia para ver las variacion de la ganancia, atraves de un diagrama de bode 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Imagenes/lazoAbierto.png}
+	\caption{AV en funcion de la frecuencia}
+	\label{fig:4}
+\end{figure}
+Se puede observar que el ancho de banda va desde los 10Khz hasta los 2MHz
+\subsection{Lazo Cerrado}
+Al cerrar el lazo se volvio a medir la $Vout=700mV$
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Imagenes/Avf.png}
+	\caption{Vout Lazo cerrado}
+	\label{fig:4}
+\end{figure}
+Se calculo la ganancia a lazo abierto $H(s)=\frac{V_o}{V_i} = 11,66$
+Se hizo un varrido en frecuencia para ver las variacion de la ganancia, atraves de un diagrama de bode 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Imagenes/lazoCerrado.png}
+	\caption{AV en funcion de la frecuencia}
+	\label{fig:4}
+\end{figure}
+Se puede observar que el ancho de banda va desde los 10Khz hasta los 10MHz
+
+
+
+
 
 \section{Procedimiento}
 \subsection{Consignas Solitadas}
