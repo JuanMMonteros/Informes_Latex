@@ -73,12 +73,12 @@ Además, se discutirán algunas de las aplicaciones prácticas de este tipo de a
 Se realizaron los cálculos de $A_v$, $Z_o$, $Z_i$, $A_{vf}$, $Z_{of}$, $Z_{if}$
 \singlespacing
 Estamos frente a un amplificador el cual tiene unas función de transferencia $H(s)=\frac{V_o}{V_i}
-$ por lo tanto el circuito equivalente de este lo podemos ver en la figura \ref{fig:2.1}
+$ por lo tanto el circuito equivalente de este lo podemos ver en la figura \ref{fig:1}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.75\textwidth]{Imagenes/circeq.png}
 	\caption{Circuito equivalente amplificador realimentado V-S}
-	\label{fig:2.1}
+	\label{fig:1}
 \end{figure}
 \singlespacing
 definiremos los parámetros de este circuito respecto al esquemático dado
@@ -92,22 +92,20 @@ $Rf \rightarrow 1K6\Omega$ \hspace{1cm} $R_B'=R_{b3}//R_{b4} \rightarrow 19K7\Om
 $hfe1 \rightarrow 359$ \hspace{1cm} $hfe2 \rightarrow 339$ $R_{c2} \hspace{1cm} \rightarrow 2K\Omega$
 \singlespacing
 Para $hie$ se deben encontrar las corriente ICQ1 e ICQ2 Para eso analizarimos la polarizacion de los traacitores
-\\
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
-	\includegraphics[width=0.75\textwidth]{Imagenes/polarizacionQ1.png}
+	\includegraphics[height=0.75\textwidth]{Imagenes/polarizacionQ1.png}
 	\caption{Polarizacion Q1}
-	\label{fig:2.4}
+	\label{fig:2}
 \end{figure}
 $Vcc-VR_{b1}-VR_{b2}=0 \rightarrow ICQ1=hfe1\frac{Vcc}{R_{b1}+R_{b2}}=5,73mA$
 \\
 $hie1=hfe1\frac{25mV}{ICQ1}=1568\Omega$
-\\
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.75\textwidth]{Imagenes/PolarizaQ2.png}
 	\caption{Polarizacion Q2}
-	\label{fig:2.5}
+	\label{fig:3}
 \end{figure}
 $Vcc-VR_{b3}-VR_{b4}=0 \rightarrow ICQ2=hfe2\frac{Vcc}{R_{b3}+R_{b4}}=55,65mA$
 \\
@@ -118,17 +116,17 @@ Las ecuaciones que podemos obtener del análisis del circuito son
 \singlespacing
 $i_{b1}=V_i\frac{1}{hie_1+[(R_{e1}//R_f)(hfe + 1)]} \rightarrow \frac{i_{b1}}{v_i}=\frac{1}{hie_1+[(R_{e1}//R_f)(hfe + 1)]}=22,36*10^{-6}$
 \singlespacing
-$ i_{b2}=ib1(-hfe\frac{R_{e1}//R_b'//(hie_2+R_{e3}(hfe_2+1))}{(hie_2+R_{e3}(hfe_2+1))}{hie_2})}) \rightarrow \frac{i_{b2}}{i_{b1}}=-hfe\frac{R_{e1}//R_b'//(hie_2+R_{e3}(hfe_2+1))}{(hie_2+R_{e3}(hfe_2+1))}{hie_2})}=35$
+$ i_{b2}=ib1(-hfe\frac{R_{e1}//R_b'//(hie_2+R_{e3}(hfe_2+1))}{(hie_2+R_{e3}(hfe_2+1))}{hie_2}) \rightarrow \frac{i_{b2}}{i_{b1}}=-hfe\frac{R_{e1}//R_b'//(hie_2+R_{e3}(hfe_2+1))}{(hie_2+R_{e3}(hfe_2+1))}{hie_2}=35$
 \singlespacing
 $V_o=i_{b2}(-hfe[R_{e2}//(R_f+R_{e2})]) \rightarrow \frac{V_o}{i_{b2}}=-hfe[R_{e2}//(R_f+R_{e2}]=105749$
 \subsection{Calculo Av}
 $A_v=\frac{V_o}{V_i}=\frac{v_o}{i_{b2}}\frac{i_{b2}}{i_{b1}}\frac{i_{b1}}{v_i}=82,87$
 \subsection{Calculo Red beta y calculo Avf}
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.75\textwidth]{Imagenes/Screenshot_58.png}
 	\caption{Red Beta  V-S}
-	\label{fig:2.2.1}
+	\label{fig:4}
 \end{figure}
 \singlespacing
 $v_o=i(R_f+R_{e1})$ \hspace{1cm} $vf=iR_{e1}$
@@ -147,6 +145,46 @@ $Z_{if}=Z_i*D=283K\Omega$
 \singlespacing
 $Z_{of}=\frac{Z_o}{D}=130\Omega$
 \section{Simulaciones}
+Para la simulacion se utilizo el sofware Ltspace en el mismo se modelo el amplificador realimentado, se selecciono un valor de $Vin=60mV_{pp}$ y una $f=1,5KHz$
+\subsection{Lazo Abierto}
+y se pudo obserla la $Vout=4,8V_{pp}$ de la fig\ref*{label}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Imagenes/Av.png}
+	\caption{Vout Lazo Abierto}
+	\label{fig:4}
+\end{figure}
+Se calculo la ganancia a lazo abierto $H(s)=\frac{V_o}{V_i} = 80$
+\singlespacing
+Se hizo un varrido en frecuencia para ver las variacion de la ganancia, atraves de un diagrama de bode 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Imagenes/lazoAbierto.png}
+	\caption{AV en funcion de la frecuencia}
+	\label{fig:4}
+\end{figure}
+Se puede observar que el ancho de banda va desde los 10Khz hasta los 2MHz
+\subsection{Lazo Cerrado}
+Al cerrar el lazo se volvio a medir la $Vout=700mV$
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Imagenes/Avf.png}
+	\caption{Vout Lazo cerrado}
+	\label{fig:4}
+\end{figure}
+Se calculo la ganancia a lazo abierto $H(s)=\frac{V_o}{V_i} = 11,66$
+Se hizo un varrido en frecuencia para ver las variacion de la ganancia, atraves de un diagrama de bode 
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Imagenes/lazoCerrado.png}
+	\caption{AV en funcion de la frecuencia}
+	\label{fig:4}
+\end{figure}
+Se puede observar que el ancho de banda va desde los 10Khz hasta los 10MHz
+
+
+
+
 
 \section{Procedimiento}
 \subsection{Consignas Solitadas}
@@ -163,7 +201,7 @@ $Z_{of}=\frac{Z_o}{D}=130\Omega$
 \end{itemize}
 Para poder realizar las mediciones solicitadas , se realizo el pcb del circuito correspondiente y se monto los componentes en el mismo.
 Una vez hecho esto se alimeto el circuito con 22V C.C, en paralelo con $R_L$ se conecto un osiloscopio digital para poder medir la salida y en la entrada un generador de ondas $V_{in}= 60 V_{pp}$ como en el esquema de figura \ref{fig:4.1}
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.75\textwidth]{Imagenes/conexion.png}
 	\caption{Conexiones amplificador realimentado V-S}
@@ -172,11 +210,11 @@ Una vez hecho esto se alimeto el circuito con 22V C.C, en paralelo con $R_L$ se 
 \subsection{Mediciones}
 Se comenzo midiendo la salida a lazo abierto $V_o=4V_{pp}$, se procedio a conectar la realimentacion a la salida y se obtuvo la $V_o=700mV$ a lazo cerrado
 \singlespacing
-$A_{v1}=\frac{V_o}{V_{i}}=\frac{4V}{0.06V}=66.66\therefore A_{vf1}=\frac{V_o}{V_{i}}=\frac{700mV}{60mV}=11.66$
+$A_{v1}=\frac{V_o}{V_{i}}=\frac{4V}{0.06V}=66.66 \therefore A_{vf1}=\frac{V_o}{V_{i}}=\frac{700mV}{60mV}=11.66$
 \singlespacing
 Para reducir la ganacia a lazo abierto un 45 \% se remplazo $R_{e3}$ por un tripo de $1K\Omega$ y se lo vario hasta que la $V_o=2,2V$ en lazo abierto esto se logro con el tripo en $500\omega$, se conecto la realimentacio en se midio $V_o=550mv$
 \singlespacing
-Con estos datos se volvio a calcular $A_{v2}=\frac{V_o}{V_{i}}=\frac{2,2V}{0.06V}=36.66\therefore A_{vf2}=\frac{V_o}{V_{i}}=\frac{550mV}{60mV}=9.66$
+Con estos datos se volvio a calcular $A_{v2}=\frac{V_o}{V_{i}}=\frac{2,2V}{0.06V}=36.66 \therefore A_{vf2}=\frac{V_o}{V_{i}}=\frac{550mV}{60mV}=9.66$
 \singlespacing
 $D=\frac{\Delta \% A_v}{\Delta \% A_{vf}}=\frac{45\%}{21,44\%}=2,09$
 \singlespacing
@@ -186,7 +224,7 @@ Una vez calculada la desensibilidad se conecto en la entrada un tripo de $100k\O
 	\centering
 	\includegraphics[width=0.75\textwidth]{Imagenes/zi.png}
 	\caption{Circuito para medicion Zi}
-	\label{fig:4.2}
+	\label{fig:5}
 \end{figure}
 con el amplificador a lazo abierto se aumento la $V_i$ hasta llegar al punto MES(Maxima excurcion simetrica) $V_o=4,8V$, se conecto el tripo y se lo vario hasta llegar a una $V_o=2,4V$, se saco el tripo y se lo medio
 \singlespacing
@@ -194,11 +232,11 @@ $Z_i=40,26k\Omega$
 \singlespacing
 Para $Z_o$ se realizo la conexion de la figuta\ref{fig:4.3}
 \singlespacing
-\begin{figure}[h]
+\begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.75\textwidth]{Imagenes/zo.png}
 	\caption{Circuito para medicion Zo}
-	\label{fig:4.3}
+	\label{fig:6}
 \end{figure}
 \label{LastPage}
 \end{document}
