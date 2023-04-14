@@ -218,7 +218,7 @@ Con estos datos se volvio a calcular $A_{v2}=\frac{V_o}{V_{i}}=\frac{2,2V}{0.06V
 \singlespacing
 $D=\frac{\Delta \% A_v}{\Delta \% A_{vf}}=\frac{45\%}{21,44\%}=2,09$
 \singlespacing
-Una vez calculada la desensibilidad se conecto en la entrada un tripo de $100k\Omega$ con se muestra en la figura\ref{fig:4.2}
+Una vez calculada la desensibilidad se conecto en la entrada un tripo de $100k\Omega$ con se muestra en la figura\ref{fig:5}
 \singlespacing
 \begin{figure}[h!]
 	\centering
@@ -230,13 +230,63 @@ con el amplificador a lazo abierto se aumento la $V_i$ hasta llegar al punto MES
 \singlespacing
 $Z_i=40,26k\Omega$
 \singlespacing
-Para $Z_o$ se realizo la conexion de la figuta\ref{fig:4.3}
+Para $Z_o$ se realizo la conexion de la figura\ref{hala}
 \singlespacing
 \begin{figure}[h!]
 	\centering
 	\includegraphics[width=0.75\textwidth]{Imagenes/zo.png}
 	\caption{Circuito para medicion Zo}
-	\label{fig:6}
+	\label{hala}
 \end{figure}
 \label{LastPage}
+
+
+\newpage
+\singlespacing
+\section{Respuesta en frecuencia}
+
+\begin{table}[htbp!]
+  \centering
+  \caption{Add caption}
+    \begin{tabular}{|r|r|r|r|r|r}
+    
+\hline \multicolumn{5}{|c|}{Variacion de la ganancia a lazo } &  \\
+
+\hline  \multicolumn{1}{|l|}{Frecuencia} & \multicolumn{1}{l|}{Vo-pp(mv)} & \multicolumn{1}{l|}{Vof-pp(mv)} & \multicolumn{1}{l|}{Av} & \multicolumn{1}{l|}{Avf} &  \\
+
+\cmidrule    10    & 2000  & 200   & 33,3333333 & 3,33333333 &  \\
+
+\cmidrule   50    & 4240  & 500   & 70,6666667 & 8,33333333 &  \\
+
+\cmidrule    100   & 4000  & 720   & 66,6666667 & 12    &  \\
+
+\cmidrule    300   & 4000  & 760   & 66,6666667 & 12,6666667 &  \\
+
+\cmidrule    500   & 4800  & 688   & 80    & 11,4666667 &  \\
+
+\cmidrule    1000  & 4644  & 688   & 77,4  & 11,4666667 &  \\
+
+\cmidrule    5000  & 5000  & 720   & 83,3333333 & 12    &  \\
+
+\cmidrule   8000  & 4760  & 720   & 79,3333333 & 12    &  \\
+
+\cmidrule   10000 & 4720  & 672   & 78,6666667 & 11,2  &  \\
+
+\cmidrule    50000 & 4800  & 680   & 80    & 11,3333333 &  \\
+
+\cmidrule   100000 & 4800  & 705   & 80    & 11,75 &  \\
+
+\cmidrule   200000 & 4600  & 720   & 76,6666667 & 12    &  \\
+
+\cmidrule   500000 & 3600  & 680   & 60    & 11,3333333 &  \\
+
+\cmidrule    800000 & 2720  & 680   & 45,3333333 & 11,3333333 &  \\
+
+\cmidrule    1000000 & 2400  & 680   & 40    & 11,3333333 &  \\
+\cmidrule   1500000 & 1560  & 720   & 26    & 12    &  \\
+\cmidrule    2000000 & 1120  & 720   & 18,6666667 & 12    &  \\
+\cmidrule    \end{tabular}%
+  \label{tab:addlabel}%
+\end{table}%
+\newpage
 \end{document}
