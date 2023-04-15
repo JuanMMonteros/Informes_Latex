@@ -118,7 +118,7 @@ Para $hie$ se deben encontrar las corriente ICQ1 e ICQ2 Para eso analizamos la p
 	\label{fig:pol_Q1}
 \end{figure}
 $Vcc-VR_{b1}-VR_{b2}=0 \rightarrow ICQ1=hfe1\frac{Vcc}{R_{b1}+R_{b2}}=5,73mA$
-\\
+\singlespacing
 $hie1=hfe1\frac{25mV}{ICQ1}=1568\Omega$
 \begin{figure}[H]
 	\centering
@@ -127,9 +127,9 @@ $hie1=hfe1\frac{25mV}{ICQ1}=1568\Omega$
 	\label{fig:pol_Q2}
 \end{figure}
 $Vcc-VR_{b3}-VR_{b4}=0 \rightarrow ICQ2=hfe2\frac{Vcc}{R_{b3}+R_{b4}}=55,65mA$
-\\
+\singlespacing
 $hie2=hfe2\frac{25mV}{ICQ2}=152\Omega$
-\\
+\singlespacing
 
 Las ecuaciones que podemos obtener del análisis del circuito son
 \singlespacing
@@ -257,9 +257,9 @@ Para $Z_o$ se realizo la conexión como se indica en la figura\ref{fig:med_Zo}.
 	\caption{Circuito para medición Zo}
 	\label{fig:med_Zo}
 \end{figure}
-Primero con el amplificador a lazo abierto se elimino la resistencia de carga y se inyecto una señal de entrada asta alcanzar el punto MES $V_o=[numero]V$. Echo esto se se inserto un tripo de $10k\Omega$ en el lugar de la carga y se lo vario hasta llegar a una $V_o=[numero]V$, se saco el tripo y se lo medio con un ohmetro.
+Primero con el amplificador a lazo abierto se elimino la resistencia de carga y se inyecto una señal de entrada asta alcanzar el punto MES . Echo esto se se inserto un tripo de $10k\Omega$ en el lugar de la carga y se lo vario hasta que $V_{out}$ disminuyo en un 50\% su valor , se saco el tripo y se lo medio con un ohmetro.
 \singlespacing
-$Z_o=[numero]k\Omega$
+$Z_o=2k\Omega$
 \singlespacing
 
 
@@ -310,9 +310,14 @@ Se midió la respuesta en frecuencias a laso abierto y cerrado del circuito (fig
     \label{tab:tab_resp_frec}
 \end{table}
 
-\section{concluciones}
- agregar concluciones
-
+\section{Concluciones}
+Con este practico pudimos ver los efectos que causa la realimentación negativa en los amplificadores, mejorando las caracterısticas de los mismos, y a través de las practicas de laboratorio y la realización de los cálculos pudimos demostrarlo analıtica y prácticamente.
+\singlespacing
+se observo que las ventajas de la realimentación negativas como el aumento de ancho de banda y la gran estabilidad que le brinda al circuito,se midiendo la desensibilidad tanto en forma practica como teórico, teniendo que variar hasta en un 45\% la tencion de salida a lazo abierto para poder observar cambios en la tencion de salida a lazo abierto. Esto nos trae grandes beneficios ya que los transistores suelen variar muchos sus parámetros (hfe,hie,etc) entre uno y otro , con la temperatura y con la frecuencia 
+\singlespacing
+Otra de las ventajas que se observaron fue como mejoro su impedancia de entrada($Z_{if}$) la cual se multiplica por la desensibilidad aumentando la misma para no sacarle corriente a la fuente de señal.La impedancia de salida($Z_{of}$) se vio dividida por la desensibilidad para que la potencia valla hacia la carga.
+\singlespacing
+El uso de la realimentación esta directamente relacionado con el sacrificio de gran parte de la ganancia para mejorar la estabilidad del amplificador y sus impedancias tanto a la entra como a la salida, sin embargo esto puede solucionarse agregando una etapa amplificadora extra
 %no mover esto del final
 \newpage
 \section{Anexo}
