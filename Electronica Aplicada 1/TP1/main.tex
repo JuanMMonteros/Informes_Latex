@@ -270,7 +270,7 @@ Se midió la respuesta en frecuencias a laso abierto y cerrado del circuito (fig
     \caption{Respuesta en frecuencia medida en laboratorio}
     \begin{tabular}{|r|r|r|r|r|r}
         
-    \hline \multicolumn{5}{|c|}{Variación de la ganancia a lazo } &  \\
+    \hline \multicolumn{5}{|c|}{Variación de la ganancia} &  \\
     
     \hline  \multicolumn{1}{|l|}{Frecuencia(Hz)} & \multicolumn{1}{l|}{Vo-pp(mv)} & \multicolumn{1}{l|}{Vof-pp(mv)} & \multicolumn{1}{l|}{Av} & \multicolumn{1}{l|}{Avf} &  \\
     
@@ -309,29 +309,55 @@ Se midió la respuesta en frecuencias a laso abierto y cerrado del circuito (fig
     \end{tabular}
     \label{tab:tab_resp_frec}
 \end{table}
+\singlespacing
+A continuación se exponen de manera gráfica las respuestas en frecuencia tanto para lazo abierto (figura \ref{fig:av_vs_fr}) como lazo cerrado (figura \ref{fig:avf_vs_fr}) expuestas como ganancia vs frecuencia.  Como resulta observable la respuesta en frecuencia aumenta considerablemente al retro alimentar el circuito, tanto así que con los generadores de onda disponibles en el ensayo no llega a ser visualisable el punto donde esta decae. Por otra parte es notoria la disminución de ganancia a lazo cerrado algo que se destaca en la gráfica de la figura \ref{fig:av&avf_vs_fr}.
 
-\section{Concluciones}
-Con este practico pudimos ver los efectos que causa la realimentación negativa en los amplificadores, mejorando las caracterısticas de los mismos, y a través de las practicas de laboratorio y la realización de los cálculos pudimos demostrarlo analıtica y prácticamente.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Imagenes/resp_frecuencia_av.png}
+	\caption{Variación de la ganancia a lazo abierto}
+	\label{fig:av_vs_fr}
+\end{figure}
 \singlespacing
-se observo que las ventajas de la realimentación negativas como el aumento de ancho de banda y la gran estabilidad que le brinda al circuito,se midiendo la desensibilidad tanto en forma practica como teórico, teniendo que variar hasta en un 45\% la tencion de salida a lazo abierto para poder observar cambios en la tencion de salida a lazo abierto. Esto nos trae grandes beneficios ya que los transistores suelen variar muchos sus parámetros (hfe,hie,etc) entre uno y otro , con la temperatura y con la frecuencia 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Imagenes/resp_frecuencia_avf.png}
+	\caption{Variación de la ganancia a lazo cerrado}
+	\label{fig:avf_vs_fr}
+\end{figure}
 \singlespacing
-Otra de las ventajas que se observaron fue como mejoro su impedancia de entrada($Z_{if}$) la cual se multiplica por la desensibilidad aumentando la misma para no sacarle corriente a la fuente de señal.La impedancia de salida($Z_{of}$) se vio dividida por la desensibilidad para que la potencia valla hacia la carga.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.75\textwidth]{Imagenes/resp_frecuencia_avf_av.png}
+	\caption{Variación de la ganancia a lazo abierto y cerrado}
+	\label{fig:av&avf_vs_fr}
+\end{figure}
 \singlespacing
-El uso de la realimentación esta directamente relacionado con el sacrificio de gran parte de la ganancia para mejorar la estabilidad del amplificador y sus impedancias tanto a la entra como a la salida, sin embargo esto puede solucionarse agregando una etapa amplificadora extra
+
+\section{Conclusiones}
+Con este practico pudimos ver los efectos que causa la realimentación negativa en los amplificadores, mejorando las caracterısticas de los mismos, mientras que a través de las practicas de laboratorio y la realización de los cálculos pudimos demostrarlo analıtica y prácticamente.
+\singlespacing
+Se observo  ventajas de la realimentación negativas como el aumento de ancho de banda y la gran estabilidad que le brinda al circuito,se midio la desensibilidad tanto en forma practica como teórica, teniendo que variar hasta en un 45\% la tensión de salida a lazo abierto para poder observar cambios en la tensión de salida a lazo cerrado. Esto nos trae grandes beneficios ya que los transistores suelen variar muchos sus parámetros (hfe,hie,etc) entre uno y otro también con con la temperatura y con la frecuencia, incluso componentes como las resistencias pueden contener un gran margen de variación.  Por estas causas tener un circuito mas robusto ante esto puede resultar provechoso. 
+\singlespacing
+Otra de las ventajas que se observaron fue como mejoro su impedancia de entrada($Z_{if}$) la cual para este caso se multiplica por la desensibilidad aumentando la misma disminuyendo la exigencia de  corriente a la fuente de señal. La impedancia de salida($Z_{of}$) se vio dividida por la desensibilidad para que la potencia valla hacia la carga.
+\singlespacing
+El uso de la realimentación esta directamente relacionado con el sacrificio de gran parte de la ganancia para mejorar la estabilidad del amplificador y sus impedancias tanto a la entra como a la salida, sin embargo esto puede solucionarse agregando una etapa amplificadora extra. 
+
+
 %no mover esto del final
 \newpage
 \section{Anexo}
 \begin{figure}[H]
     \centering
-    \includepdf[pages={1}, scale=0.60]{Imagenes/BC548.pdf}
-    \caption{Datasheet bc548}
+    \includepdf[pages={1}, scale=0.60 ,pagecommand={\pagestyle{fancy}\fancyhf{}}]{Imagenes/BC548.pdf}
+    \caption{Datasheet BC548}
     \label{fig:datasheet_bc548}
 \end{figure}
 \newpage
 \begin{figure}[H]
     \centering
-    \includepdf[pages={2}, scale=0.60]{Imagenes/BC548.pdf}
-    \caption{Datasheet bc548}
+    \includepdf[pages={2}, scale=0.60 ,pagecommand={\pagestyle{fancy}\fancyhf{}}]{Imagenes/BC548.pdf}
+    \caption{Datasheet BC548}
 \end{figure}
 
 
