@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.26)  12 APR 2023 11:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 23.1) (preloaded format=pdflatex 2023.3.26)  14 APR 2023 11:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -212,37 +212,42 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 73.
 
 
-LaTeX Warning: Reference `fig:2.1' on page 2 undefined on input line 76.
+LaTeX Warning: Reference `fig:1' on page 2 undefined on input line 76.
 
-<Imagenes/circeq.png, id=13, 1152.305pt x 205.76875pt>
+<Imagenes/circeq.png, id=13, 815.29594pt x 85.82062pt>
 File: Imagenes/circeq.png Graphic file (type png)
 <use Imagenes/circeq.png>
 Package pdftex.def Info: Imagenes/circeq.png  used on input line 79.
-(pdftex.def)             Requested size: 320.0935pt x 57.15958pt.
+(pdftex.def)             Requested size: 320.0935pt x 33.69382pt.
 <Imagenes/polarizacionQ1.png, id=15, 366.36874pt x 526.96875pt>
 File: Imagenes/polarizacionQ1.png Graphic file (type png)
 <use Imagenes/polarizacionQ1.png>
-Package pdftex.def Info: Imagenes/polarizacionQ1.png  used on input line 98.
-(pdftex.def)             Requested size: 320.0935pt x 460.43716pt.
+Package pdftex.def Info: Imagenes/polarizacionQ1.png  used on input line 97.
+(pdftex.def)             Requested size: 222.55101pt x 320.0935pt.
 <Imagenes/PolarizaQ2.png, id=16, 366.36874pt x 526.96875pt>
 File: Imagenes/PolarizaQ2.png Graphic file (type png)
 <use Imagenes/PolarizaQ2.png>
-Package pdftex.def Info: Imagenes/PolarizaQ2.png  used on input line 108.
+Package pdftex.def Info: Imagenes/PolarizaQ2.png  used on input line 106.
 (pdftex.def)             Requested size: 320.0935pt x 460.43716pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--116
+Underfull \hbox (badness 10000) in paragraph at lines 94--114
 
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (46.63605pt too wide) in paragraph at lines 119--120
+[]$\OML/cmm/m/it/12 i[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 ib\OT1/cmr/m/n/12 1(\OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 hfe[][]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ! [] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 hfe[][] \OT1/cmr/m/n/12 =
+ []
 
 File: Imagenes/UTN_logo.jpg Graphic file (type jpg)
 <use Imagenes/UTN_logo.jpg>
-Package pdftex.def Info: Imagenes/UTN_logo.jpg  used on input line 121.
+Package pdftex.def Info: Imagenes/UTN_logo.jpg  used on input line 120.
 (pdftex.def)             Requested size: 27.78735pt x 28.45274pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -252,43 +257,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-20.80278pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 121.
+LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 120.
 
 [2 <./Imagenes/circeq.png>]
-d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:121: Extra }, or forgotten $.
-l.121 ..._2+1))}{(hie_2+R_{e3}(hfe_2+1))}{hie_2})}
-                                                  ) \rightarrow \frac{i_{b2}...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:121: Extra }, or forgotten $.
-l.121 ..._2+1))}{(hie_2+R_{e3}(hfe_2+1))}{hie_2})}
-                                                  =35$
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-Overfull \hbox (55.77484pt too wide) in paragraph at lines 121--122
-[]$\OML/cmm/m/it/12 i[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 ib\OT1/cmr/m/n/12 1(\OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 hfe[][]\OT1/cmr/m/n/12 )) \OMS/cmsy/m/n/12 ! [] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 hfe[][]\OT1/cmr/m/n/12 ) =
- []
-
 <Imagenes/Screenshot_58.png, id=28, 138.5175pt x 124.96687pt>
 File: Imagenes/Screenshot_58.png Graphic file (type png)
 <use Imagenes/Screenshot_58.png>
-Package pdftex.def Info: Imagenes/Screenshot_58.png  used on input line 129.
+Package pdftex.def Info: Imagenes/Screenshot_58.png  used on input line 127.
 (pdftex.def)             Requested size: 320.0935pt x 288.81548pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: Imagenes/UTN_logo.jpg Graphic file (type jpg)
 <use Imagenes/UTN_logo.jpg>
-Package pdftex.def Info: Imagenes/UTN_logo.jpg  used on input line 163.
+Package pdftex.def Info: Imagenes/UTN_logo.jpg  used on input line 143.
 (pdftex.def)             Requested size: 27.78735pt x 28.45274pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -298,22 +281,92 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-20.80278pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 163.
+LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 143.
 
-[3]
+[3 <./Imagenes/polarizacionQ1.png>]
 
-LaTeX Warning: Reference `fig:4.1' on page 4 undefined on input line 165.
+LaTeX Warning: Reference `label' on page 4 undefined on input line 150.
 
-<Imagenes/conexion.png, id=33, 585.18625pt x 301.125pt>
+<Imagenes/Av.png, id=34, 1018.55531pt x 446.41782pt>
+File: Imagenes/Av.png Graphic file (type png)
+<use Imagenes/Av.png>
+Package pdftex.def Info: Imagenes/Av.png  used on input line 153.
+(pdftex.def)             Requested size: 320.0935pt x 140.28857pt.
+File: Imagenes/UTN_logo.jpg Graphic file (type jpg)
+<use Imagenes/UTN_logo.jpg>
+Package pdftex.def Info: Imagenes/UTN_logo.jpg  used on input line 158.
+(pdftex.def)             Requested size: 27.78735pt x 28.45274pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 32.80278pt, for example:
+(fancyhdr)                \setlength{\headheight}{32.80278pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-20.80278pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 158.
+
+[4 <./Imagenes/PolarizaQ2.png>]
+<Imagenes/lazoAbierto.png, id=39, 1017.04968pt x 450.9347pt>
+File: Imagenes/lazoAbierto.png Graphic file (type png)
+<use Imagenes/lazoAbierto.png>
+Package pdftex.def Info: Imagenes/lazoAbierto.png  used on input line 162.
+(pdftex.def)             Requested size: 320.0935pt x 141.92133pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<Imagenes/Avf.png, id=40, 1026.08344pt x 467.49657pt>
+File: Imagenes/Avf.png Graphic file (type png)
+<use Imagenes/Avf.png>
+Package pdftex.def Info: Imagenes/Avf.png  used on input line 171.
+(pdftex.def)             Requested size: 320.0935pt x 145.83551pt.
+<Imagenes/lazoCerrado.png, id=41, 1017.04968pt x 441.14813pt>
+File: Imagenes/lazoCerrado.png Graphic file (type png)
+<use Imagenes/lazoCerrado.png>
+Package pdftex.def Info: Imagenes/lazoCerrado.png  used on input line 179.
+(pdftex.def)             Requested size: 320.0935pt x 138.84123pt.
+File: Imagenes/UTN_logo.jpg Graphic file (type jpg)
+<use Imagenes/UTN_logo.jpg>
+Package pdftex.def Info: Imagenes/UTN_logo.jpg  used on input line 184.
+(pdftex.def)             Requested size: 27.78735pt x 28.45274pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 32.80278pt, for example:
+(fancyhdr)                \setlength{\headheight}{32.80278pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-20.80278pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 184.
+
+[5 <./Imagenes/Screenshot_58.png> <./Imagenes/Av.png>]
+File: Imagenes/UTN_logo.jpg Graphic file (type jpg)
+<use Imagenes/UTN_logo.jpg>
+Package pdftex.def Info: Imagenes/UTN_logo.jpg  used on input line 193.
+(pdftex.def)             Requested size: 27.78735pt x 28.45274pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 32.80278pt, for example:
+(fancyhdr)                \setlength{\headheight}{32.80278pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-20.80278pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 193.
+
+[6 <./Imagenes/lazoAbierto.png> <./Imagenes/Avf.png> <./Imagenes/lazoCerrado.png>]
+
+LaTeX Warning: Reference `fig:4.1' on page 7 undefined on input line 203.
+
+<Imagenes/conexion.png, id=54, 585.18625pt x 301.125pt>
 File: Imagenes/conexion.png Graphic file (type png)
 <use Imagenes/conexion.png>
-Package pdftex.def Info: Imagenes/conexion.png  used on input line 168.
+Package pdftex.def Info: Imagenes/conexion.png  used on input line 206.
 (pdftex.def)             Requested size: 320.0935pt x 164.71867pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:175: Undefined control sequence.
-l.175 ...}{V_{i}}=\frac{4V}{0.06V}=66.66\therefore
+d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:213: Undefined control sequence.
+l.213 ...{V_{i}}=\frac{4V}{0.06V}=66.66 \therefore
                                                    A_{vf1}=\frac{V_o}{V_{i}}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -321,8 +374,23 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:179: Undefined control sequence.
-l.179 ...V_{i}}=\frac{2,2V}{0.06V}=36.66\therefore
+File: Imagenes/UTN_logo.jpg Graphic file (type jpg)
+<use Imagenes/UTN_logo.jpg>
+Package pdftex.def Info: Imagenes/UTN_logo.jpg  used on input line 217.
+(pdftex.def)             Requested size: 27.78735pt x 28.45274pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 32.80278pt, for example:
+(fancyhdr)                \setlength{\headheight}{32.80278pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-20.80278pt}.
+
+
+LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 217.
+
+[7 <./Imagenes/conexion.png>]
+d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:217: Undefined control sequence.
+l.217 ..._{i}}=\frac{2,2V}{0.06V}=36.66 \therefore
                                                    A_{vf2}=\frac{V_o}{V_{i}}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -331,35 +399,32 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `fig:4.2' on page 4 undefined on input line 183.
+LaTeX Warning: Reference `fig:5' on page 8 undefined on input line 221.
 
-<Imagenes/zi.png, id=34, 327.2225pt x 187.70125pt>
+<Imagenes/zi.png, id=59, 327.2225pt x 187.70125pt>
 File: Imagenes/zi.png Graphic file (type png)
 <use Imagenes/zi.png>
-Package pdftex.def Info: Imagenes/zi.png  used on input line 187.
+Package pdftex.def Info: Imagenes/zi.png  used on input line 225.
 (pdftex.def)             Requested size: 320.0935pt x 183.61087pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Overfull \hbox (18.15497pt too wide) in paragraph at lines 191--192
+Overfull \hbox (18.15497pt too wide) in paragraph at lines 229--230
 []\OT1/cmr/m/n/12 con el am-pli-fi-ca-dor a la-zo abier-to se au-men-to la $\OML/cmm/m/it/12 V[]$ \OT1/cmr/m/n/12 has-ta lle-gar al pun-to MES(Maxima
  []
 
 
-LaTeX Warning: Reference `fig:4.3' on page 4 undefined on input line 195.
+LaTeX Warning: Reference `hala' on page 8 undefined on input line 233.
 
-<Imagenes/zo.png, id=35, 327.2225pt x 206.7725pt>
+<Imagenes/zo.png, id=60, 327.2225pt x 206.7725pt>
 File: Imagenes/zo.png Graphic file (type png)
 <use Imagenes/zo.png>
-Package pdftex.def Info: Imagenes/zo.png  used on input line 199.
+Package pdftex.def Info: Imagenes/zo.png  used on input line 237.
 (pdftex.def)             Requested size: 320.0935pt x 202.26651pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 File: Imagenes/UTN_logo.jpg Graphic file (type jpg)
 <use Imagenes/UTN_logo.jpg>
-Package pdftex.def Info: Imagenes/UTN_logo.jpg  used on input line 204.
+Package pdftex.def Info: Imagenes/UTN_logo.jpg  used on input line 244.
 (pdftex.def)             Requested size: 27.78735pt x 28.45274pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -369,14 +434,181 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-20.80278pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 204.
+LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 244.
 
-[4]
+[8 <./Imagenes/zi.png>]
+d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:257: Undefined control sequence.
+l.257 \cmidrule
+                   10    & 2000  & 200   & 33,3333333 & 3,33333333 &  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:259: Undefined control sequence.
+l.259 \cmidrule
+                  50    & 4240  & 500   & 70,6666667 & 8,33333333 &  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:261: Undefined control sequence.
+l.261 \cmidrule
+                   100   & 4000  & 720   & 66,6666667 & 12    &  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:263: Undefined control sequence.
+l.263 \cmidrule
+                   300   & 4000  & 760   & 66,6666667 & 12,6666667 &  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:265: Undefined control sequence.
+l.265 \cmidrule
+                   500   & 4800  & 688   & 80    & 11,4666667 &  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:267: Undefined control sequence.
+l.267 \cmidrule
+                   1000  & 4644  & 688   & 77,4  & 11,4666667 &  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:269: Undefined control sequence.
+l.269 \cmidrule
+                   5000  & 5000  & 720   & 83,3333333 & 12    &  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:271: Undefined control sequence.
+l.271 \cmidrule
+                  8000  & 4760  & 720   & 79,3333333 & 12    &  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:273: Undefined control sequence.
+l.273 \cmidrule
+                  10000 & 4720  & 672   & 78,6666667 & 11,2  &  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:275: Undefined control sequence.
+l.275 \cmidrule
+                   50000 & 4800  & 680   & 80    & 11,3333333 &  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:277: Undefined control sequence.
+l.277 \cmidrule
+                  100000 & 4800  & 705   & 80    & 11,75 &  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:279: Undefined control sequence.
+l.279 \cmidrule
+                  200000 & 4600  & 720   & 76,6666667 & 12    &  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:281: Undefined control sequence.
+l.281 \cmidrule
+                  500000 & 3600  & 680   & 60    & 11,3333333 &  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:283: Undefined control sequence.
+l.283 \cmidrule
+                   800000 & 2720  & 680   & 45,3333333 & 11,3333333 &  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:285: Undefined control sequence.
+l.285 \cmidrule
+                   1000000 & 2400  & 680   & 40    & 11,3333333 &  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:286: Undefined control sequence.
+<recently read> \cmidrule 
+                          
+l.286 \cmidrule
+                  1500000 & 1560  & 720   & 26    & 12    &  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:287: Undefined control sequence.
+<recently read> \cmidrule 
+                          
+l.287 \cmidrule
+                   2000000 & 1120  & 720   & 18,6666667 & 12    &  \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+d:/AGUSTIN/Desktop/APLICADA_Informes/Informes_Latex/Electronica Aplicada 1/TP1/main.tex:288: Undefined control sequence.
+<recently read> \cmidrule 
+                          
+l.288 \cmidrule
+                   \end{tabular}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 File: Imagenes/UTN_logo.jpg Graphic file (type jpg)
 <use Imagenes/UTN_logo.jpg>
-Package pdftex.def Info: Imagenes/UTN_logo.jpg  used on input line 204.
+Package pdftex.def Info: Imagenes/UTN_logo.jpg  used on input line 291.
 (pdftex.def)             Requested size: 27.78735pt x 28.45274pt.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 32.80278pt, for example:
@@ -385,57 +617,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-20.80278pt}.
 
 
-LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 204.
+LaTeX Warning: Reference `LastPage' on page 9 undefined on input line 291.
 
-[5 <./Imagenes/polarizacionQ1.png>]
-File: Imagenes/UTN_logo.jpg Graphic file (type jpg)
-<use Imagenes/UTN_logo.jpg>
-Package pdftex.def Info: Imagenes/UTN_logo.jpg  used on input line 204.
-(pdftex.def)             Requested size: 27.78735pt x 28.45274pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 32.80278pt, for example:
-(fancyhdr)                \setlength{\headheight}{32.80278pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-20.80278pt}.
-
-
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 204.
-
-[6 <./Imagenes/PolarizaQ2.png>]
-File: Imagenes/UTN_logo.jpg Graphic file (type jpg)
-<use Imagenes/UTN_logo.jpg>
-Package pdftex.def Info: Imagenes/UTN_logo.jpg  used on input line 204.
-(pdftex.def)             Requested size: 27.78735pt x 28.45274pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 32.80278pt, for example:
-(fancyhdr)                \setlength{\headheight}{32.80278pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-20.80278pt}.
-
-
-LaTeX Warning: Reference `LastPage' on page 7 undefined on input line 204.
-
-[7 <./Imagenes/Screenshot_58.png> <./Imagenes/conexion.png>]
-File: Imagenes/UTN_logo.jpg Graphic file (type jpg)
-<use Imagenes/UTN_logo.jpg>
-Package pdftex.def Info: Imagenes/UTN_logo.jpg  used on input line 204.
-(pdftex.def)             Requested size: 27.78735pt x 28.45274pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 32.80278pt, for example:
-(fancyhdr)                \setlength{\headheight}{32.80278pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-20.80278pt}.
-
-
-LaTeX Warning: Reference `LastPage' on page 8 undefined on input line 204.
-
-[8 <./Imagenes/zi.png> <./Imagenes/zo.png>] (d:/AGUSTIN\Desktop\APLICADA_Informes\Informes_Latex\Electronica Aplicada 1\TP1build\main.aux
+[9 <./Imagenes/zo.png>] (d:/AGUSTIN\Desktop\APLICADA_Informes\Informes_Latex\Electronica Aplicada 1\TP1build\main.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -447,17 +631,17 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 3614 strings out of 476334
- 58940 string characters out of 5805787
- 1863382 words of memory out of 5000000
- 24020 multiletter control sequences out of 15000+600000
+ 3645 strings out of 476334
+ 59595 string characters out of 5805787
+ 1865382 words of memory out of 5000000
+ 24047 multiletter control sequences out of 15000+600000
  517751 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,16n,62p,360b,402s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,16n,62p,358b,402s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <D:/Mik/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Mik/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><D:/Mik/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Mik/fonts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Mik/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Mik/fonts/type1/public/amsfonts/cm/cmr12.pfb><D:/Mik/fonts/type1/public/amsfonts/cm/cmr17.pfb><D:/Mik/fonts/type1/public/amsfonts/cm/cmr6.pfb><D:/Mik/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Mik/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Mik/fonts/type1/public/amsfonts/cm/cmsy6.pfb><D:/Mik/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on "d:/AGUSTIN\Desktop\APLICADA_Informes\Informes_Latex\Electronica Aplicada 1\TP1build\main.pdf" (9 pages, 371615 bytes).
+Output written on "d:/AGUSTIN\Desktop\APLICADA_Informes\Informes_Latex\Electronica Aplicada 1\TP1build\main.pdf" (10 pages, 492863 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
+ 119 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
