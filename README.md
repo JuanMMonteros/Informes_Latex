@@ -4,6 +4,7 @@ Aqui se hallan gloriosos y majestuosos informes de la carrera
 
 
 ## Instrucciones basicas
+* Cuidado con lo que se sube!!!
 ### Para subir
 
 * git add [archibo_para_subir] 
