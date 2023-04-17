@@ -108,7 +108,7 @@ $R_{e3} \rightarrow 240\Omega$\hspace{1cm} $R_{L} \rightarrow 470\Omega$ \hspace
 \singlespacing
 $Rf \rightarrow 1K6\Omega$ \hspace{1cm} $R_B'=R_{b3}//R_{b4} \rightarrow 19K7\Omega$ \hspace{1cm} $R_{c1} \rightarrow18K\Omega$
 \singlespacing
-$hfe1 \rightarrow 359$ \hspace{1cm} $hfe2 \rightarrow 339$ $R_{c2} \hspace{1cm} \rightarrow 2K\Omega$
+$hfe1 \rightarrow 359$ \hspace{1cm} $hfe2 \rightarrow 339$\hspace{1cm} $R_{c2}  \rightarrow 2K\Omega$
 \singlespacing
 Para $hie$ se deben encontrar las corriente ICQ1 e ICQ2 Para eso analizamos la polarización de los transistores. vease en figura \ref{fig:pol_Q1} y \ref{fig:pol_Q2}
 \begin{figure}[H]
@@ -135,7 +135,9 @@ Las ecuaciones que podemos obtener del análisis del circuito son
 \singlespacing
 $i_{b1}=V_i\frac{1}{hie_1+[(R_{e1}//R_f)(hfe + 1)]} \rightarrow \frac{i_{b1}}{v_i}=\frac{1}{hie_1+[(R_{e1}//R_f)(hfe + 1)]}=22,36*10^{-6}$
 \singlespacing
-$ i_{b2}=ib1(-hfe\frac{R_{e1}//R_b'//(hie_2+R_{e3}(hfe_2+1))}{(hie_2+R_{e3}(hfe_2+1))}{hie_2}) \rightarrow \frac{i_{b2}}{i_{b1}}=-hfe\frac{R_{e1}//R_b'//(hie_2+R_{e3}(hfe_2+1))}{(hie_2+R_{e3}(hfe_2+1))}{hie_2}=35$
+$ i_{b2}=ib1(-hfe\frac{R_{e1}//R_b'//(hie_2+R_{e3}(hfe_2+1))}{(hie_2+R_{e3}(hfe_2+1))}{hie_2}) $
+\singlespacing
+$ \frac{i_{b2}}{i_{b1}}=-hfe\frac{R_{e1}//R_b'//(hie_2+R_{e3}(hfe_2+1))}{(hie_2+R_{e3}(hfe_2+1))}{hie_2}=35$
 \singlespacing
 $V_o=i_{b2}(-hfe[R_{e2}//(R_f+R_{e2})]) \rightarrow \frac{V_o}{i_{b2}}=-hfe[R_{e2}//(R_f+R_{e2}]=105749$
 \subsection{Calculo Av}
@@ -226,11 +228,14 @@ Una vez hecho esto se alimento el circuito con 22V C.C, en paralelo con $R_L$ se
 \subsection{Mediciones}
 Se comenzó midiendo la salida a lazo abierto $V_o=4V_{pp}$, se procedió a conectar la realimentación a la salida y se obtuvo la $V_o=700mV$ a lazo cerrado
 \singlespacing
-$A_{v1}=\frac{V_o}{V_{i}}=\frac{4V}{0.06V}=66.66 \therefore A_{vf1}=\frac{V_o}{V_{i}}=\frac{700mV}{60mV}=11.66$
+$A_{v1}=\frac{V_o}{V_{i}}=\frac{4V}{0.06V}=66.66$
+\singlespacing 
+$A_{vf1}=\frac{V_o}{V_{i}}=\frac{700mV}{60mV}=11.66$
 \singlespacing
 Para reducir la ganancia a lazo abierto un 45 \% se remplazo $R_{e3}$ por un tripo de $1K\Omega$ y se lo vario hasta que la $V_o=2,2V$ en lazo abierto esto se logro con el tripo en $500\omega$, se conecto la realimentación en se midió $V_o=600mv$
 \singlespacing
-Con estos datos se volvió a calcular $A_{v2}=\frac{V_o}{V_{i}}=\frac{2,2V}{0.06V}=36.66 \therefore A_{vf2}=\frac{V_o}{V_{i}}=\frac{600mV}{60mV}=10$
+Con estos datos se volvió a calcular $A_{v2}=\frac{V_o}{V_{i}}=\frac{2,2V}{0.06V}=36.66$ \singlespacing
+$A_{vf2}=\frac{V_o}{V_{i}}=\frac{600mV}{60mV}=10$
 \singlespacing
 $D=\frac{\Delta \% A_v}{\Delta \% A_{vf}}=\frac{45\%}{14.28\%}=3.15$
 \singlespacing
@@ -245,6 +250,7 @@ Una vez calculada la desensibilidad se conecto en la entrada un tripo de $100k\O
 con el amplificador a lazo abierto se aumento la $V_i$ hasta llegar al punto MES(Máxima excursión simétrica) $V_o=4,8V$, se conecto el tripo y se lo vario hasta llegar a una $V_o=2,4V$, se saco el tripo y se lo medio con un ohmetro.
 \singlespacing
 $Z_i=40,26k\Omega$
+\singlespacing
 $Z_{if}=Zi*D=126.81k\Omega$
 \singlespacing
 
@@ -261,6 +267,7 @@ Para $Z_o$ se realizo la conexión como se indica en la figura\ref{fig:med_Zo}.
 Primero con el amplificador a lazo abierto se elimino la resistencia de carga y se inyecto una señal de entrada asta alcanzar el punto MES . Echo esto se se inserto un tripo de $10k\Omega$ en el lugar de la carga y se lo vario hasta que $V_{out}$ disminuyo en un 50\% su valor , se saco el tripo y se lo medio con un ohmetro.
 \singlespacing
 $Z_o=2k\Omega$
+\singlespacing
 $Z_{of}=\frac{Z_o}{D}=635\Omega$
 \singlespacing
 
