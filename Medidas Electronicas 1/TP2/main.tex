@@ -138,20 +138,33 @@ este caso hay dos mediciones que se han efectuado, una de corriente y una de ten
 hacen con el multímetro. El valor de la resistencia resulta ser el cociente entre la tensión y la 
 corriente, por ende el error relativo máximo total es la suma de los errores relativos máximos parciales.
 \singlespacing
-$\frac{\Delta R}{R} = \frac{\Delta V}{V}+\frac{\Delta I}{I}$
+
+  \centering
+  $\frac{\Delta R}{R} = \frac{\Delta V}{V}+\frac{\Delta I}{I}$
+
+         
+   
+
 
 \singlespacing
 Los errores máximos parciales (o incertidumbre) para cada una de las mediciones se deben 
 obtener de las especificaciones de exactitud del multímetro empleado. 
 \singlespacing
-$\Delta X=( \frac{\text{Valor promedio  Porcentaje}}{100} + N° digitos)$
+
+ 
+ $\Delta X=( \frac{\text{Valor promedio  Porcentaje}}{100} + N° digitos)$
+
+     
+    
+
 \singlespacing
-%POner el + arriba del -%
+
 En este caso se uso una escala de tantos V con una exactitud +- (0,5\% + 5 digitos) y para una escala de 400mA una exactitud de +-(0,8\% + 3 dígitos)
 por lo que podemos calcular los valores de incertidumbre y errores relativos.
 \singlespacing  
 
-\item  Incertidumbres\singlespacing
+\begin{itemize}
+\item Incertidumbres\singlespacing
 $\Delta I=$\singlespacing
 \item Errores Relativos\singlespacing
 $\frac{\Delta V}{V}$\singlespacing
@@ -177,34 +190,29 @@ $\frac{Delta V}{V} * 100=$\singlespacing
 	R           & 1,036    $\Omega$    & 21,016 $\Omega$  & 20,286     & 2,028\%        \\ \hline
 	\end{tabular}
 	\end{center}
-
+\end{itemize}
 \singlespacing
-\item Calculo\\ 
+\subsection{Calculo}
 
-Rf= $\frac{R}{L_{p}}$
+$Rf= \frac{R}{L_{p}} = \frac{1,036}{20} = 0,0518$ 
 \singlespacing
 
-$\frac{ \Delta R^'}{R} =$ 
+$\frac{ \Delta R^'}{R} = \frac{\Delta R}{R} + \frac{\Delta L_{p}}{L_{p}} = 20,286*10^-^3 + \frac{0,2m}{20m} = 30,286*10^-^3$  
 \singlespacing
+$\Delta R^'$ = 30,286*10^-^3 * 1,036 = 31,376*10^-^3 m$\Omega$
 
 \begin{center}
 \begin{tabular}{|c|c|}
 \hline
-R()                 & 3333333     \\ \hline
-Lp                  & 33333333333 \\ \hline
-R1                  & 3333333333  \\ \hline
-Incertidumbre total & 333333333   \\ \hline
+R(\Omega)                 & 1,036\Omega    \\ \hline
+Lp(m)                  & 20m                \\ \hline
+R1 ($\frac{\Omega}{m}$)      & 30,286*10^-^3 $\frac{\Omega}{m}$  \\ \hline
+Incertidumbre total & 31,376*10^-^3   \\ \hline
 \end{tabular}
 \end{center}
+
 
 	
 	\section{Segunda parte - Medición de la resistencia de un sistema de puesta a tierra (Jabalina)}
 
 \section{Conclusiones}
-
-
-
-
-
-\label{LastPage}
-\end{document}
