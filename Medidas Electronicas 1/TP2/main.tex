@@ -72,7 +72,8 @@ que el resultado obtenido puede estar afectado de un error importante
 por la presencia de resistencias de contactos entre las terminales del
 elemento a medir y las puntas de la prueba del instrumento. Estas resistencias
 de contacto son de valor impredecible y por ende resulta muy difícil descontar 
-el error. \\
+el error. 
+\singlespacing
 Para la medición de la resistencia de un sistema puesta a tierra,se realiza 
 también un método que emplea una fuente de corriente constante, es el de la "resistencia
 de sistema puesta a tierra". El tipo de instrumento que se utiliza se conoce como
@@ -145,7 +146,7 @@ $V=R*I$
     R   & 1.035$\Omega$  \\ \hline 
     \end{tabular}
     \label{tab:tab_medidas}
-\end{table}}
+\end{table}
 
 \subsection{Cálculo de la incertidumbre en la medición}
 
@@ -173,36 +174,37 @@ $\frac{\Delta R}{R} = \frac{\Delta V}{V}+\frac{\Delta I}{I}$
 Los errores máximos parciales (o incertidumbre) para cada una de las mediciones se deben 
 obtener de las especificaciones de exactitud del multímetro empleado. 
 \singlespacing
-$\Delta X=( \frac{\text{Valor promedio  Porcentaje}}{100} + N° digitos)$
+$\Delta X=( \frac{\textbf{Valor promedio \%}}{100} + N° digitos)$
 \singlespacing
 %POner el + arriba del -%
-En este caso se uso una escala de tantos V con una exactitud +- (0,5\% + 5 digitos) y para una escala de 400mA una exactitud de +-(0,8\% + 3 dígitos)
+En este caso se uso una escala de tantos V con una exactitud $/pm$ (0,5\% + 5 digitos) y para una escala de 400mA una exactitud de $/pm$(0,8\% + 3 dígitos)
 por lo que podemos calcular los valores de incertidumbre y errores relativos.
 \singlespacing  
 
 \item  Incertidumbres\singlespacing
-$\Delta I=$\singlespacing
+$\Delta I= \frac{0,8 * 100mA}{100}+0.3mA=1,1mA$\singlespacing
+$\Delta V= \frac{0,5 * 103,6mV}{100}+0.5mV=1,018mV$\singlespacing
 \item Errores Relativos\singlespacing
-$\frac{\Delta V}{V}$\singlespacing
-$\frac{\Delta I}{I}$ \singlespacing
+$\frac{\Delta V}{V}=9,826*10^{-3}$\singlespacing
+$\frac{\Delta I}{I}=11*10^{-3}$ \singlespacing
 \item Calculo de la incertidumbre en la resistencia\singlespacing
 
 $\frac{\Delta R}{R} =\frac{\Delta V}{V} + \frac{\Delta I}{I}$ \singlespacing
-
-$\Delta R=$\singlespacing
+$\frac{\Delta R}{R}=9,826*10^{-3}+11*10^{-3}=20.826*10^{-3}$
+$\Delta R * R=21.52*10^{-3}$\singlespacing
 
 \item Errores relativos Porcentuales\singlespacing
 
-$\frac{Delta V}{V} * 100=$\singlespacing
-$\frac{Delta V}{V} * 100=$\singlespacing
-$\frac{Delta V}{V} * 100=$\singlespacing
+$\frac{\Delta V}{V} * 100=0.982\%$\singlespacing
+$\frac{\Delta I}{I} * 100=1.1\%$\singlespacing
+$\frac{\Delta R}{R} * 100=2.082\%$\singlespacing
  
 \begin{table}[H]
 \centering
 \caption{Incertidumbres en la medición}
 	\begin{tabular}{|c|c|c|c|c|}
     	\hline
-    	----------- & ----------- & $\Delta x$  & $frac{\Delta x}{X}$  & $\frac{\Delta x}{X} *100$ \\ \hline
+    	----------- & ----------- & $\Delta x$  & $\frac{\Delta x}{X}$  & $\frac{\Delta x}{X} *100$ \\ \hline
     	V           & 103,6 mV    & 1,018mV & 9,826      & 0,982\%        \\ \hline
     	I           & 100 mA      & 1,1mA   & 11         & 1,1\%          \\ \hline
     	R           & 1,036    $\Omega$    & 21,016 $\Omega$  & 20,286     & 2,028\%        \\ \hline
@@ -211,27 +213,6 @@ $\frac{Delta V}{V} * 100=$\singlespacing
 \end{table}
 
 \singlespacing
-\item Calculo\\ 
-
-Rf= $\frac{R}{L_{p}}$
-\singlespacing
-
-$\frac{ \Delta R^'}{R} =$ 
-\singlespacing
-
-\begin{table}[H]
-\centering
-\caption{Valores por metro de conductor}
-    \begin{tabular}{|c|c|}\hline
-        R($\Omega$)                 & 3333333     \\ \hline
-        Lp                  & 33333333333 \\ \hline
-        R1                  & 3333333333  \\ \hline
-        Incertidumbre total & 333333333   \\ \hline
-    \end{tabular}
-    \label{tab:val_x_metro}
-\end{table}
-
-	
 \section{Segunda parte - Medición de la resistencia de un sistema de puesta a tierra (Jabalina)}
 una medición habitual que implementa un método indirecto de cuatro terminales es el de la resistencia de “sistemas de puesta a tierra”. El tipo de
 instrumento que se utiliza se conoce como Telurimetro (figura \ref{fig:telurimetro}). Se entiende como “sistema de puesta a tierra” a la coneccion que se efectúa
