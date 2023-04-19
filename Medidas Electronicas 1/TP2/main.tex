@@ -156,52 +156,55 @@ este caso hay dos mediciones que se han efectuado, una de corriente y una de ten
 hacen con el multímetro. El valor de la resistencia resulta ser el cociente entre la tensión y la 
 corriente, por ende el error relativo máximo total es la suma de los errores relativos máximos parciales.
 \singlespacing
-\begin{figure}[H]
-		\centering
-		\includegraphics{imagenes/DC_ut39c.png}
-		\caption{Especificaciones para corriente continua UT39C+}
-        \label{fig:DC_UT39C}
-	\end{figure}
- \begin{figure}[H]
-		\centering
-		\includegraphics{imagenes/DV_ut39c.png}
-		\caption{Especificaciones para voltaje en continua UT39C+}
-        \label{fig:DV_UT39C}
-	\end{figure}
 $\frac{\Delta R}{R} = \frac{\Delta V}{V}+\frac{\Delta I}{I}$
 
 \singlespacing
+
 Los errores máximos parciales (o incertidumbre) para cada una de las mediciones se deben 
 obtener de las especificaciones de exactitud del multímetro empleado. 
 \singlespacing
+\begin{figure}[H]
+	\centering
+	\includegraphics{imagenes/DC_ut39c.png}
+	\caption{Especificaciones para corriente continua UT39C+}
+	\label{fig:DC_UT39C}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics{imagenes/DV_ut39c.png}
+	\caption{Especificaciones para voltaje en continua UT39C+}
+	\label{fig:DV_UT39C}
+\end{figure}
+\singlespacing
 $\Delta X=( \frac{\textbf{Valor promedio \%}}{100} + N° digitos)$
 \singlespacing
-%POner el + arriba del -%
-En este caso se uso una escala de tantos V con una exactitud $\pm$ (0,5\% + 5 digitos) y para una escala de 400mA una exactitud de $\pm$(0,8\% + 3 dígitos)
+
+En este caso se uso una escala de  40V con una exactitud $\pm$ (0,5\% + 5 digitos) y para una escala de 400mA una exactitud de $\pm$(0,8\% + 3 dígitos)
 por lo que podemos calcular los valores de incertidumbre y errores relativos.
 \singlespacing  
-
-\item  Incertidumbres\singlespacing
+\begin{itemize}
+\item  Incertidumbres
+\singlespacing
 $\Delta I= \frac{0,8 * 100mA}{100}+0.3mA=1,1mA$\singlespacing
 $\Delta V= \frac{0,5 * 103,6mV}{100}+0.5mV=1,018mV$\singlespacing
 \item Errores Relativos\singlespacing
-$\frac{\Delta V}{V}=9,826*10^{-3}$\singlespacing
-$\frac{\Delta I}{I}=11*10^{-3}$ \singlespacing
+$\frac{\Delta V}{V} = 9,826*10^{-3}$\singlespacing
+$\frac{\Delta I}{I} = 11*10^{-3}$ \singlespacing
 \item Calculo de la incertidumbre en la resistencia\singlespacing
 
-$\frac{\Delta R}{R} =\frac{\Delta V}{V} + \frac{\Delta I}{I}$ \singlespacing
-$\frac{\Delta R}{R}=9,826*10^{-3}+11*10^{-3}=20.826*10^{-3}$
-$\Delta R * R=21.52*10^{-3}$\singlespacing
+$\frac{\Delta R}{R} = \frac{\Delta V}{V} + \frac{\Delta I}{I}$ \singlespacing
+$\frac{\Delta R}{R} = 9,826*10^{-3}+11*10^{-3}=20.826*10^{-3}$ \singlespacing
+$\Delta R * R = 21.52*10^{-3}$\singlespacing
 
 \item Errores relativos Porcentuales\singlespacing
 
-$\frac{\Delta V}{V} * 100=0.982\%$\singlespacing
-$\frac{\Delta I}{I} * 100=1.1\%$\singlespacing
-$\frac{\Delta R}{R} * 100=2.082\%$\singlespacing
+$\frac{\Delta V}{V} * 100 = 0.982\%$\singlespacing
+$\frac{\Delta I}{I} * 100 = 1.1\%$\singlespacing
+$\frac{\Delta R}{R} * 100 = 2.082\%$\singlespacing
  
 \begin{table}[H]
 \centering
-\caption{Incertidumbres en la medición}
+
 	\begin{tabular}{|c|c|c|c|c|}
     	\hline
     	----------- & ----------- & $\Delta x$  & $\frac{\Delta x}{X}$  & $\frac{\Delta x}{X} *100$ \\ \hline
@@ -210,8 +213,9 @@ $\frac{\Delta R}{R} * 100=2.082\%$\singlespacing
     	R           & 1,036    $\Omega$    & 21,016 $\Omega$  & 20,286     & 2,028\%        \\ \hline
 	\end{tabular}
  \label{tab\insertidumbres}
+ \caption{Incertidumbres en la medición}
 \end{table}
-
+\end{itemize}
 \singlespacing
 \section{Segunda parte - Medición de la resistencia de un sistema de puesta a tierra (Jabalina)}
 una medición habitual que implementa un método indirecto de cuatro terminales es el de la resistencia de “sistemas de puesta a tierra”. El tipo de
